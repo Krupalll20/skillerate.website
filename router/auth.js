@@ -19,7 +19,7 @@ router.post("/contactUsCombine", async (req, res) => {
     if (isBlue === "true") {
 
       const { name, email, phoneno, via } = req.body;
-      console.log("name", name)
+
       const spreadsheetId = "1MFSXFkhCLhv35sjKesJTfY8Na4tsTOxv_H5684rJuPw";
 
       const getRows = await googleSheets.spreadsheets.values.get({
